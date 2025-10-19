@@ -467,112 +467,77 @@ footer {
   
 
 
-/* ✅ GLOBAL RESPONSIVE STYLES */
+/* ---------------------------------------- */
+/* Base: Mobile-first styles (already in main CSS) */
+/* ---------------------------------------- */
 
-/* For tablets and smaller screens */
-@media (max-width: 1024px) {
-  .home-section {
-    margin-left: 60px;
-    margin-right: 30px;
-  }
-  .home-card {
-    padding: 40px 35px;
-  }
-}
-
-/* For mobile devices */
-@media (max-width: 768px) {
-  /* Cards */
-  .home-section {
-    margin-left: 20px !important;
-    margin-right: 20px !important;
-    margin-top: 30px !important;
-  }
-  .home-card {
-    padding: 30px 25px !important;
-    border-radius: 16px !important;
-  }
-  .home-card h1,
-  .home-card h2 {
-    font-size: 1.4rem !important;
-  }
-  .home-card p {
-    font-size: 0.95rem !important;
-    line-height: 1.6;
-  }
-
-  /* Header */
-  header .brand-name {
-    font-size: 0.9rem;
-  }
-  header img {
-    width: 40px;
-    height: 40px;
-  }
-
-  /* Navigation */
-  .top-nav {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 6px;
-    padding: 10px;
-    font-size: 0.9rem;
-  }
-  .top-nav a {
-    padding: 6px 10px;
-  }
-
-  /* Sidebar (optional) */
-  .sidebar-container {
-    display: none;
-  }
-
-  /* Train slider */
-  .train-track img {
-    width: 4cm;
-    height: 4cm;
-    margin: 0 5px;
-  }
-
-  /* Welcome card spacing */
-  .welcome-title {
-    font-size: 1.6rem !important;
-  }
-  .welcome-sub {
-    font-size: 1rem !important;
-  }
-  .welcome-body {
-    font-size: 0.95rem !important;
-  }
-
-  /* Footer grid stack */
-  .footer-main {
-    grid-template-columns: 1fr !important;
-    text-align: center;
-    gap: 20px !important;
-  }
-  .footer-main .footer-col {
-    padding: 0 20px;
-  }
-  .footer-bottom {
-    font-size: 0.85rem;
-  }
-}
-
-/* Ultra small devices (like old phones) */
-@media (max-width: 480px) {
+/* Tablets: 768px to 1024px */
+@media (min-width: 768px) and (max-width: 1024px) {
   body {
-    padding-top: 120px;
+    padding-top: 250px; /* adjust if necessary */
   }
-  .home-card {
-    padding: 25px 20px !important;
+
+  .contact-section {
+    margin-left: 40px; /* smaller margin for tablets */
+    padding: 40px 20px;
   }
-  .train-track img {
-    width: 3cm;
-    height: 3cm;
+
+  .card, .fp-card, .sub-card {
+    width: 90%; /* make cards fit smaller screens */
+    margin: 20px auto;
+  }
+
+  nav, .navbar {
+    font-size: 1rem; /* adjust nav font size */
   }
 }
+
+/* Small Desktop: 1025px to 1440px */
+@media (min-width: 1025px) and (max-width: 1440px) {
+  body {
+    padding-top: 300px;
+  }
+
+  .contact-section {
+    margin-left: 120px;
+    padding: 50px 30px;
+  }
+
+  .card, .fp-card, .sub-card {
+    width: 80%;
+    margin: 25px auto;
+  }
+}
+
+/* Large Desktop: 1441px and above */
+@media (min-width: 1441px) {
+  body {
+    padding-top: 350px;
+  }
+
+  .contact-section {
+    margin-left: 240px;
+    padding: 60px 40px;
+  }
+
+  .card, .fp-card, .sub-card {
+    width: 70%;
+    margin: 30px auto;
+  }
+}
+
+/* Images & Videos: Make responsive */
+img, video {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Navbar & Logos */
+.logo img {
+  max-width: 100%;
+  height: auto;
+}
+
 
 
 
