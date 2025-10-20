@@ -1098,6 +1098,37 @@ window.addEventListener('scroll', () => {
 
 
 
+
+<script>
+  const menuToggle = document.getElementById('menu-toggle');
+  const topNav = document.getElementById('topNav');
+  const dropdownBtns = document.querySelectorAll('.dropbtn');
+
+  // Toggle main mobile menu
+  menuToggle.addEventListener('click', () => {
+    topNav.classList.toggle('show');
+  });
+
+  // Handle dropdown toggle on mobile
+  dropdownBtns.forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const dropdown = btn.nextElementSibling;
+      dropdown.classList.toggle('show-dropdown');
+    });
+  });
+
+  // Close dropdown if clicking outside
+  document.addEventListener('click', () => {
+    document.querySelectorAll('.dropdown-content').forEach(dc => {
+      dc.classList.remove('show-dropdown');
+    });
+  });
+</script>
+
+  
+  
 </body>
 </html>
+
 
