@@ -63,21 +63,26 @@
 </script>
 
 </head>
+  
 
 <body>
 
   <!-- ✅ HEADER & NAVIGATION (UNCHANGED) -->
-  <div class="header-nav-wrapper">
-    <header id="mainHeader">
-      <div class="logo">
-        <a href="index.html" style="display: flex; align-items: center; gap: 18px; text-decoration: none;">
-          <img src="assets/images/logo.png" alt="MM Times Logo">
-          <span class="brand-name">MM Times - Meenakshi Mukundha Times</span>
-        </a>
-      </div>
-    </header>
+  <!-- ✅ HEADER & NAVIGATION -->
+<div class="header-nav-wrapper">
+  <header id="mainHeader">
+    <div class="logo">
+      <a href="index.html" style="display: flex; align-items: center; gap: 14px; text-decoration: none;">
+        <img src="assets/images/logo.png" alt="MM Times Logo">
+        <span class="brand-name">MM Times - Meenakshi Mukundha Times</span>
+      </a>
+    </div>
 
-    <div class="top-nav" id="topNav">
+    <!-- ☰ Hamburger (visible only on mobile) -->
+    <div class="menu-toggle" id="menu-toggle">☰</div>
+
+    <!-- 🌐 TOP NAVIGATION -->
+    <nav class="top-nav" id="topNav">
       <a href="index.html" class="nav-link home-btn active">Home</a>
 
       <div class="dropdown">
@@ -97,35 +102,47 @@
       <div class="dropdown">
         <a href="services.html" class="nav-link">Services</a>
         <div class="dropdown-content">
-          <a href="logo-web-solutions.html">Logo and Web Solutions</a>
+          <a href="logo-web-solutions.html">Logo & Web Solutions</a>
           <a href="company-registration.html">Company Registration & Compliance</a>
-          <a href="workshops.html">Hands On Practical Workshops</a>
+          <a href="workshops.html">Hands-On Workshops</a>
           <a href="projects.html">Projects & Innovations</a>
-          <a href="cp-manufacturing.html">Customized Product Manufacturing</a>
+          <a href="cp-manufacturing.html">CP Manufacturing</a>
           <a href="material-procurement.html">Material Procurement</a>
-          <a href="customized-sourcing.html">Customized Sourcing with Quality Inspection & R&D</a>
+          <a href="customized-sourcing.html">Customized Sourcing & R&D</a>
           <a href="b2b-imports.html">B2B Imports & Procurement</a>
-          <a href="business-setup.html">Business Setup & End-to-End Support</a>
-          <a href="student-startup-packages.html">Student and Startup Special Packages</a>
+          <a href="business-setup.html">Business Setup & Support</a>
+          <a href="student-startup-packages.html">Startup Packages</a>
         </div>
       </div>
 
-      <a href="workshops.html" class="nav-link">Workshops</a>
-      <a href="projects.html" class="nav-link">Projects</a>
-      <a href="cp-manufacturing.html" class="nav-link">CP Manufacturing</a>
-      <a href="about.html" class="nav-link">About</a>
-      <a href="team.html" class="nav-link">Team</a>
-      <a href="blog.html" class="nav-link">Blogs</a>
-      <a href="contact-us.html" class="nav-link">Contact us</a>
-      <a href="our-partners.html" class="nav-link">Our Partners</a>
-      <a href="careers.html" class="nav-link">Careers</a>
-      <a href="be-an-entrepreneur.html" class="nav-link">Be an Entrepreneur</a>
-      <a href="be-a-manufacturer.html" class="nav-link">Be a Manufacturer</a>
-      <a href="book-of-business-ideas.html" class="nav-link">Book of Business Ideas</a>
       <a href="downloads.html" class="nav-link">Downloads</a>
 
-    </div>
-  </div>
+      <!-- 🔹 More Dropdown (rest of the links) -->
+      <div class="dropdown">
+        <button class="dropbtn">More ⌄</button>
+        <div class="dropdown-content">
+          <a href="workshops.html">Workshops</a>
+          <a href="projects.html">Projects</a>
+          <a href="about.html">About</a>
+          <a href="team.html">Team</a>
+          <a href="blog.html">Blogs</a>
+          <a href="contact-us.html">Contact Us</a>
+          <a href="our-partners.html">Our Partners</a>
+          <a href="careers.html">Careers</a>
+          <a href="be-an-entrepreneur.html">Be an Entrepreneur</a>
+          <a href="be-a-manufacturer.html">Be a Manufacturer</a>
+          <a href="book-of-business-ideas.html">Book of Business Ideas</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+</div>
+
+
+
+
+
+  
 
   <div class="sidebar-container">
   <a href="product1.html" class="slide-bar">
@@ -1083,3 +1100,4 @@ window.addEventListener('scroll', () => {
 
 </body>
 </html>
+
