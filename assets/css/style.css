@@ -332,19 +332,31 @@ section {
 /* ======================================== */
 /* 🦶 FOOTER                                  */
 /* ======================================== */
+
+html, body { width: 100%; overflow-x: hidden; }
+
+
+section { 
+  margin-left: 240px; 
+  padding: 62px 5px; 
+  position: relative; 
+  max-width: calc(100% - 240px);
+  overflow-x: hidden;
+}
+
 footer {
-  margin-left: 5px;
-  margin-right: 5px;
-  margin-bottom: 5px;
-  margin-top: 1250px;
-  width: 100%;
+  width: calc(100% - 10px);
+  margin: 1250px auto 5px auto;
   padding: 30px 20px;
   text-align: center;
   background: rgba(0,0,0,0.3);
   border-radius: 15.5px;
   border-top: 1.5px solid rgba(255,255,255,0.962);
   border-bottom: 1.5px solid rgba(255,255,255,0.962);
+  box-sizing: border-box;
+  overflow-x: hidden;
 }
+
 
 /* Service Links in Footer */
 .service-link {
@@ -459,7 +471,6 @@ footer {
   transform: translateY(0px) scale(0.98);
   box-shadow: 0 0 15px rgba(0, 234, 255, 0.5);
 }
-
 
 
 
