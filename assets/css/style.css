@@ -465,162 +465,115 @@ footer {
   
 
 
-/* ------------------ MOBILE RESPONSIVE ------------------ */
-@media (max-width: 768px) {
-  
-  /* Hide sidebars */
-  .sidebar-container {
-    display: none !important;
-  }
+/* ✅ GLOBAL RESPONSIVE STYLES */
 
-  /* Home sections full width and centered */
+/* For tablets and smaller screens */
+@media (max-width: 1024px) {
   .home-section {
-    margin-left: 10px !important;
-    margin-right: 10px !important;
-    margin-top: 20px !important;
+    margin-left: 60px;
+    margin-right: 30px;
   }
-
   .home-card {
-    padding: 30px 20px !important;
-    border-radius: 15px !important;
+    padding: 40px 35px;
+  }
+}
+
+/* For mobile devices */
+@media (max-width: 768px) {
+  /* Cards */
+  .home-section {
+    margin-left: 20px !important;
+    margin-right: 20px !important;
+    margin-top: 30px !important;
+  }
+  .home-card {
+    padding: 30px 25px !important;
+    border-radius: 16px !important;
+  }
+  .home-card h1,
+  .home-card h2 {
+    font-size: 1.4rem !important;
+  }
+  .home-card p {
+    font-size: 0.95rem !important;
+    line-height: 1.6;
   }
 
-  /* Header & navbar full width */
-  .header-nav-wrapper,
-  header,
-  .top-nav {
-    width: 100% !important;
-    position: relative !important;
-    transform: translateY(0) !important;
+  /* Header */
+  header .brand-name {
+    font-size: 0.9rem;
+  }
+  header img {
+    width: 40px;
+    height: 40px;
   }
 
+  /* Navigation */
   .top-nav {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    gap: 6px;
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+  .top-nav a {
+    padding: 6px 10px;
   }
 
-  .top-nav .nav-link,
-  .top-nav .dropdown {
-    flex: 1 1 100%;
-    text-align: center;
-    margin: 5px 0;
+  /* Sidebar (optional) */
+  .sidebar-container {
+    display: none;
   }
 
-  /* Train slider adjustment */
+  /* Train slider */
   .train-track img {
-    width: 120px !important;
-    height: 120px !important;
+    width: 4cm;
+    height: 4cm;
+    margin: 0 5px;
   }
 
-  /* Footer full width */
-  footer,
-  .footer-main,
-  .footer-bottom {
-    width: 100% !important;
-    padding: 30px 15px !important;
-    text-align: center !important;
-    grid-template-columns: 1fr !important;
-  }
-
-  .footer-col {
-    margin-bottom: 20px !important;
-  }
-  
-  /* Adjust text size */
-  .home-card h2 {
-    font-size: 1.5rem !important;
-  }
-
-  .home-card p {
-    font-size: 1rem !important;
-    line-height: 1.6 !important;
-  }
-
+  /* Welcome card spacing */
   .welcome-title {
-    font-size: 1.8rem !important;
+    font-size: 1.6rem !important;
   }
-
   .welcome-sub {
     font-size: 1rem !important;
   }
-
   .welcome-body {
     font-size: 0.95rem !important;
   }
-}
 
-
-/* ============================ */
-/* 📱 MOBILE NAVBAR (HAMBURGER) */
-/* ============================ */
-.menu-toggle {
-  display: none;
-  font-size: 2rem;
-  color: white;
-  cursor: pointer;
-  background: rgba(255,255,255,0.1);
-  border-radius: 8px;
-  padding: 6px 14px;
-  border: 1.5px solid rgba(255,255,255,0.5);
-  transition: all 0.3s ease;
-}
-
-.menu-toggle:hover {
-  background: rgba(255,255,255,0.2);
-  box-shadow: 0 0 10px #00eaff;
-}
-
-/* Default desktop */
-.top-nav {
-  display: flex;
-}
-
-/* MOBILE LAYOUT */
-@media (max-width: 768px) {
-  header {
-    height: auto;
-    padding: 10px 15px;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-
-  /* Shrink logo & text */
-  .logo img {
-    height: 55px;
-  }
-  .logo span {
-    font-size: 1.4rem;
-  }
-
-  /* Hide nav links initially */
-  .top-nav {
-    display: none;
-    flex-direction: column;
-    width: 100%;
-    margin-top: 10px;
-    padding: 10px 0;
-    background: rgba(0, 0, 0, 0.7);
-    border-radius: 12px;
-    border: 1px solid rgba(255,255,255,0.2);
+  /* Footer grid stack */
+  .footer-main {
+    grid-template-columns: 1fr !important;
     text-align: center;
-    transition: all 0.3s ease;
+    gap: 20px !important;
   }
-
-  /* Show nav when menu is toggled */
-  .top-nav.show {
-    display: flex;
+  .footer-main .footer-col {
+    padding: 0 20px;
   }
-
-  .top-nav .nav-link {
-    display: block;
-    width: 100%;
-    padding: 12px;
-    font-size: 1rem;
-  }
-
-  .menu-toggle {
-    display: block;
+  .footer-bottom {
+    font-size: 0.85rem;
   }
 }
+
+/* Ultra small devices (like old phones) */
+@media (max-width: 480px) {
+  body {
+    padding-top: 120px;
+  }
+  .home-card {
+    padding: 25px 20px !important;
+  }
+  .train-track img {
+    width: 3cm;
+    height: 3cm;
+  }
+}
+
+
+
+
+
 
